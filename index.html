@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Countdown Screen -->
+        <div class="countdown-screen" id="countdownScreen">
+
+            <h1 class="countdown-title">
+                Counting Down To Your Special Day 🎂
+            </h1>
+
+            <div class="countdown-box">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Welcome Screen -->
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1 class="welcome-message">Welcome Sophie, Happy Birthday ❤️!</h1>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="container" id="mainContent" style="display: none;">
+            <div class="tabs">
+                <button class="tab active" data-tab="love-letter">
+                    <span>🎉</span> Letter
+                </button>
+                <button class="tab" data-tab="music">
+                    <span>🎵</span> Music
+                </button>
+                <button class="tab" data-tab="gallery">
+                    <span>🌷</span> Gallery
+                </button>
+            </div>
+            
+            <div class="content-area">
+                <!-- Letter Tab -->
+                <div class="tab-content active" id="love-letter">
+                    <h2>Happy Birthday</h2>
+                    <div class="letter" id="loveLetter">
+                        <div class="letter-header">
+                            <h3>For You</h3>
+                            <span>👇 Click to open</span>
+                        </div>
+                        <div class="letter-content">
+                            <p>Heyy sis,</p>
+                            <br>
+                            <p>May the Lord continue to bless you abundantly grant you all your hearts desires and always put a smile on your face.</p>
+                            <p>May the Lord continue to lift you higher for your continuous kindness and generosity and replenish everything you have given in a hundred fold.</p>
+                            <p>God bless you for being a wonderful sister.</p>
+                            <p>Enjoy your day sis🥳🥳🥳. Happy birthday 🎂</p>
+                            <br>
+                            <p>Yours ever,</p>
+                            <p>Joseph.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Music Tab -->
+                <div class="tab-content" id="music">
+                    <h2>Top Songs</h2>
+                    <div class="song">
+                        <div class="song-icon">🎵</div>
+                        <div class="song-info">
+                            <h4>Don't Play With Me</h4>
+                            <p>by Thompsxn Therapy</p>
+                            <button onclick="playSong('song1')">Play</button>
+                            <button onclick="pauseSong('song1')">Pause</button>
+                            <audio id="song1" src="assets/songs/dont-play-with-me-thompsxn-therapy.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="song">
+                        <div class="song-icon">🎵</div>
+                        <div class="song-info">
+                            <h4>This Chapter</h4>
+                            <p>by Shavelle G</p>
+                            <button onclick="playSong('song2')">Play</button>
+                            <button onclick="pauseSong('song2')">Pause</button>
+                            <audio id="song2" src="assets/songs/this-chapter-shavelle-g.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="song">
+                        <div class="song-icon">🎵</div>
+                        <div class="song-info">
+                            <h4>Look at God</h4>
+                            <p>by Koryn Hawthorne</p>
+                            <button onclick="playSong('song3')">Play</button>
+                            <button onclick="pauseSong('song3')">Pause</button>
+                            <audio id="song3" src="assets/songs/look-at-god-koryn-hawthorne.mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+                            
+                <!-- Gallery Tab -->
+                <div class="tab-content" id="gallery">
+                     <h2>Memories</h2>
+
+                        <div class="slideshow-container">
+                            <img id="slideshow-image" src="assets/img/photo1.jpg">
+                        </div>
+
+                        <audio id="slideshowMusic" loop>
+                            <source src="assets/songs/i-speak-blessings-delana-hope.mp3" type="audio/mp3">
+                        </audio>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
