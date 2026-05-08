@@ -7,7 +7,7 @@ const welcomeScreen = document.getElementById("welcomeScreen");
 const mainContent = document.getElementById("mainContent");
 
 // SET BIRTHDAY DATE
-const birthday = new Date(2026, 4, 8, 0, 0, 0);
+const birthday = new Date(2026, 4, 9, 0, 0, 0);
 
 function updateCountdown() {
 
